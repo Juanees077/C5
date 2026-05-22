@@ -1,0 +1,24 @@
+# Claude
+CLAUDE.md
+.claude/
+
+# Dependencies
+node_modules/
+
+# Build
+.next/
+dist/
+build/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+next-start-3001.err.log
+next-start-3001.out.log
+
+# TypeScript
+*.tsbuildinfo
