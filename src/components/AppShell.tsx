@@ -36,7 +36,7 @@ const SYSTEM_STATS = [
 export default function AppShell({ onLogout }: { onLogout?: () => void }) {
   const [active, setActive]       = useState<ViewId>("dashboard");
   const [collapsed, setCollapsed] = useState(false);
-  const [theme, setTheme]         = useState<Theme>("dark");
+  const [theme, setTheme]         = useState<Theme>("light");
   const [time, setTime]           = useState("");
   const [date, setDate]           = useState("");
   const [notifications]           = useState(5);
@@ -49,7 +49,11 @@ export default function AppShell({ onLogout }: { onLogout?: () => void }) {
 
   useEffect(() => {
     const saved = localStorage.getItem("c5-theme") as Theme | null;
-    if (saved === "light" || saved === "dark") setTheme(saved);
+    if (saved === "light" || saved === "dark") {
+      setTheme(saved);
+    } else {
+      localStorage.setItem("c5-theme", "light");
+    }
   }, []);
 
   const toggleTheme = () => {
