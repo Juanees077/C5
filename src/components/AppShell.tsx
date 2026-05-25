@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import {
   LayoutDashboard, Trophy,
   Bell, LogOut, Zap, ChevronRight,
-  Menu, X, Sun, Moon, Phone,
+  Menu, X, Sun, Moon, Phone, // Phone kept for nav item usage
   Shield, Activity, Radio, Map
 } from "lucide-react";
 import Dashboard       from "./views/Dashboard";
@@ -143,12 +143,10 @@ export default function AppShell({ onLogout }: { onLogout?: () => void }) {
           {/* Logo mark */}
           <div style={{
             width: 38, height: 38, borderRadius: 11, flexShrink: 0,
-            background: "linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%)",
+            overflow: "hidden",
             display: "flex", alignItems: "center", justifyContent: "center",
-            boxShadow: "0 0 20px rgba(59,130,246,0.40), 0 4px 12px rgba(59,130,246,0.25)",
-            animation: "glow-pulse 3s ease-in-out infinite",
           }}>
-            <Phone size={17} color="#fff" strokeWidth={2.2} />
+            <img src="/c5-logo.png" alt="C5 Logo" width={38} height={38} style={{ objectFit: "contain", display: "block" }} />
           </div>
 
           {!collapsed && (

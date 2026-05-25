@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Eye, EyeOff, Lock, User, ArrowRight, Phone, Shield, Wifi } from "lucide-react";
+import { Eye, EyeOff, Lock, User, ArrowRight, Shield, Wifi } from "lucide-react";
+import Image from "next/image";
 
 interface Props { onLogin: () => void; }
 
@@ -81,12 +82,11 @@ export default function LoginPage({ onLogin }: Props) {
           display: "flex", alignItems: "center", gap: 12,
         }}>
           <div style={{
-            width: 38, height: 38, borderRadius: 10,
-            background: "#006847",
+            width: 44, height: 44, borderRadius: 10,
             display: "flex", alignItems: "center", justifyContent: "center",
-            boxShadow: "0 4px 16px rgba(0,104,71,0.30)",
+            overflow: "hidden",
           }}>
-            <Phone size={17} color="#fff" />
+            <Image src="/c5-logo.png" alt="C5 Logo" width={44} height={44} style={{ objectFit: "contain" }} />
           </div>
           <div>
             <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontSize: 16, color: "#0F172A", letterSpacing: "-0.02em" }}>
@@ -243,8 +243,8 @@ export default function LoginPage({ onLogin }: Props) {
 
         {/* Mobile logo (visible < lg) */}
         <div className="flex lg:hidden" style={{ alignItems: "center", gap: 12, marginBottom: 36 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, background: "#006847", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Phone size={16} color="#fff" />
+          <div style={{ width: 40, height: 40, borderRadius: 10, overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Image src="/c5-logo.png" alt="C5 Logo" width={40} height={40} style={{ objectFit: "contain" }} />
           </div>
           <div>
             <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontSize: 15, color: "#0F172A" }}>C5 México</div>
