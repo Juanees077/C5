@@ -86,7 +86,7 @@ export default function LoginPage({ onLogin }: Props) {
             display: "flex", alignItems: "center", justifyContent: "center",
             overflow: "hidden",
           }}>
-            <Image src="/c5-logo.png" alt="C5 Logo" width={44} height={44} style={{ objectFit: "contain" }} />
+            <Image src="/IMG_2225.JPG.jpeg" alt="C5 Logo" width={44} height={44} style={{ objectFit: "contain" }} />
           </div>
           <div>
             <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontSize: 16, color: "#0F172A", letterSpacing: "-0.02em" }}>
@@ -244,7 +244,7 @@ export default function LoginPage({ onLogin }: Props) {
         {/* Mobile logo (visible < lg) */}
         <div className="flex lg:hidden" style={{ alignItems: "center", gap: 12, marginBottom: 36 }}>
           <div style={{ width: 40, height: 40, borderRadius: 10, overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Image src="/c5-logo.png" alt="C5 Logo" width={40} height={40} style={{ objectFit: "contain" }} />
+            <Image src="/IMG_2225.JPG.jpeg" alt="C5 Logo" width={40} height={40} style={{ objectFit: "contain" }} />
           </div>
           <div>
             <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontSize: 15, color: "#0F172A" }}>C5 México</div>
@@ -423,15 +423,30 @@ export default function LoginPage({ onLogin }: Props) {
               Mesa de ayuda DGTIC
             </a>
           </div>
-        </div>
 
-        {/* Bottom note */}
-        <p style={{
-          position: "absolute", bottom: 22,
-          fontSize: 10, color: "#CBD5E1", textAlign: "center",
-        }}>
-          Acceso restringido y monitoreado · C5 México © 2026 · FIFA World Cup 2026™
-        </p>
+          {/* Powered by */}
+          <div style={{
+            marginTop: 20, paddingTop: 16,
+            borderTop: "1px solid #F1F5F9",
+            display: "flex", flexDirection: "column", alignItems: "center", gap: 6,
+          }}>
+            <p style={{ fontSize: 10, color: "#CBD5E1", textAlign: "center", margin: 0 }}>
+              Acceso restringido y monitoreado · C5 México © 2026 · FIFA World Cup 2026™
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+              <span style={{ fontSize: 9, color: "#CBD5E1", fontWeight: 500, letterSpacing: "0.06em" }}>
+                POWERED BY
+              </span>
+              <Image
+                src="/inter.PNG"
+                alt="Interdomesti"
+                width={80}
+                height={20}
+                style={{ objectFit: "contain", opacity: 0.65 }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <style>{`

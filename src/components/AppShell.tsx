@@ -150,7 +150,7 @@ export default function AppShell({ onLogout }: { onLogout?: () => void }) {
             overflow: "hidden",
             display: "flex", alignItems: "center", justifyContent: "center",
           }}>
-            <img src="/c5-logo.png" alt="C5 Logo" width={38} height={38} style={{ objectFit: "contain", display: "block" }} />
+            <img src="/IMG_2225.JPG.jpeg" alt="C5 Logo" width={38} height={38} style={{ objectFit: "contain", display: "block" }} />
           </div>
 
           {!collapsed && (
