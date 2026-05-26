@@ -104,7 +104,7 @@ const INCIDENTS: Incident[] = [
     location: "Rionegro",
     coords: [-100.2861, 25.6982],
     incidentCount: 1,
-    agent: "Essity IA",
+    agent: "C5 IA",
     channel: "Voz IA",
   },
   {
@@ -688,17 +688,6 @@ export default function MapView() {
                     );
                   })}
                 </div>
-                <button style={{
-                  marginLeft: "auto", display: "flex", alignItems: "center", gap: 7,
-                  padding: "8px 18px", borderRadius: 10, cursor: "pointer",
-                  background: "linear-gradient(135deg, var(--electric-bright) 0%, var(--neon) 100%)",
-                  border: "none", color: "#020617", fontSize: 12, fontWeight: 900,
-                  boxShadow: "0 4px 16px rgba(59,130,246,0.35)",
-                }}>
-                  <Zap size={13} />
-                  Despachar unidad
-                  <ChevronRight size={13} />
-                </button>
               </div>
             </div>
           )}

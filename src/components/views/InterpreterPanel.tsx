@@ -63,13 +63,13 @@ const CALLS: CallRecord[] = [
     state: "En despacho",
     priority: "Alta",
     channel: "Voz IA",
-    agent: "Essity IA",
+    agent: "C5 IA",
     duration: "04:38",
     language: "Espanol",
     sentiment: "No determinable",
     sentimentScore: 52,
     summary:
-      "La llamada fue iniciada por Essity para verificar el seguimiento operativo. Se detecto buzon de voz automatico; el agente dejo un mensaje solicitando contacto y registro la gestion.",
+      "La llamada fue iniciada por C5 USA para verificar el seguimiento operativo. Se detecto buzon de voz automatico; el agente dejo un mensaje solicitando contacto y registro la gestion.",
     stateReasoning:
       "El agente verifica el estado del incidente y el sistema mantiene la llamada como despacho operativo pendiente de confirmacion.",
     sentimentReasoning:
